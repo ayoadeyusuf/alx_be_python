@@ -1,11 +1,11 @@
-monthly_income = int(input("Enter your monthly income: "))
-total_expenses = int(input("Enter your total monthly expenses: "))
+monthly_income = float(input("Enter your monthly income: "))
+total_expenses = float(input("Enter your total monthly expenses: "))
 
 # calculating monthly savings
 monthly_ savings = monthly_income - total_expenses
 
 # calculating projected savings
-projected_savings = float(monthly_savings * 12 * 0.05)
+projected_savings = monthly_savings * 12 * 0.05
 
 # output
 print('Your monthly savings are ${monthly_savings}')
