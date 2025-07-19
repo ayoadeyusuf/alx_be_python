@@ -7,6 +7,6 @@ diff = number1 - number2
 product = number1 * number2
 
 # output
-print('Addition of {number1} and {number2} is {sum}')
-print('Subtraction of {number1} and {number2} is {diff}')
-print('Multiplication of {number1} and {number2} is {prod}')
+print(f'Addition of {number1} and {number2} is {sum}')
+print(f'Subtraction of {number1} and {number2} is {diff}')
+print(f'Multiplication of {number1} and {number2} is {prod}')
