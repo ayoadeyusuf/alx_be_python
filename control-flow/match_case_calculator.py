@@ -18,4 +18,4 @@ match operation:
     result = num1 / num2
 
 # Displaying the result
-print('The result is {result}')
+print(f'The result is {result}')
