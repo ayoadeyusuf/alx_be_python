@@ -4,6 +4,6 @@ count = 0
 
 while count < size:
   for i in range(size):
-    print('*')
-  print('\n')
-  count++
+    print("*", end="")
+  count += 1
+  print()
