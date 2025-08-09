@@ -11,7 +11,7 @@ class BankAccount:
         return account_balance
 
     def display_balance(self):
-        print(f"Current Balance: ${float(self.account_balance)}")
+        print(f"Current Balance: ${float(self.account_balance)}0")
 
 def main():
     account = BankAccount(100)  # Example starting balance
