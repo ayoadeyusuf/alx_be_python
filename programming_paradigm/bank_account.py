@@ -11,7 +11,7 @@ class BankAccount:
         return account_balance
 
     def display_balance(self):
-        print(f"Account Balance: ${self.account_balance}")
+        print(f"Current Balance: ${self.account_balance}")
 
 def main():
     account = BankAccount(1000)  # Example starting balance
