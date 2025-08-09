@@ -3,11 +3,11 @@ class BankAccount:
         self.account_balance = account_balance
   
     def deposit(self,amount):
-        account_balance = float(self.account_balance + amount)
+        account_balance = self.account_balance + amount
         return account_balance
 
     def withdraw(self,amount):
-        account_balance = float(self.account_balance - amount)
+        account_balance = self.account_balance - amount
         return account_balance
 
     def display_balance(self):
