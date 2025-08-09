@@ -14,7 +14,7 @@ class BankAccount:
         print(f"Current Balance: ${self.account_balance}")
 
 def main():
-    account = BankAccount(1000)  # Example starting balance
+    account = BankAccount(100)  # Example starting balance
     if len(sys.argv) < 2:
         print("Usage: python main.py <command>:<amount>")
         print("Commands: deposit, withdraw, display")
