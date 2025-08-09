@@ -6,15 +6,15 @@ def safe_divide(numerator, denominator):
         denominator = float(denominator)
     except ValueError:
         print("Error: Please enter numeric values only.")
-        return False
+        return None
 
     try:
-        numerator/denominator
+        result = numerator/denominator
     except ZeroDivisionError:
         print("Error: Cannot divide by zero.")
-        return False
-    else:
-        return numerator/denominator
+        return None
+    return result
+
 
 
 def main():
@@ -26,7 +26,9 @@ def main():
     denominator = sys.argv[2]
 
     result = safe_divide(numerator, denominator)
-    print(f"The result of the division is {result}")
-
+    if result is not None:
+        print(f"The result of the division is {result}")
+    else:
+        print("Division could not be performed due to errors.")
 if __name__ == "__main__":
     main()
